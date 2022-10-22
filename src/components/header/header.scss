@@ -1,0 +1,60 @@
+.header {
+    // white desk
+    // background-image: url('https://images.unsplash.com/photo-1518655048521-f130df041f66?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+
+    // desk with flowers
+    // background-image: url('https://images.unsplash.com/photo-1496661415325-ef852f9e8e7c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1227&q=80');
+
+    // pink desk
+    // background-image: url('https://images.unsplash.com/photo-1493723843671-1d655e66ac1c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+
+    // macbook work desk
+    background-image: url('https://images.unsplash.com/photo-1432821579285-1b649e5b1ce3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+
+    // blue desk
+    // background-image: url('https://images.unsplash.com/photo-1497864149936-d3163f0c0f4b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80');
+
+    // mountain
+    // background-image: url('https://res.cloudinary.com/omaha-code/image/upload/ar_4:3,c_fill,dpr_1.0,e_art:quartz,g_auto,h_396,q_auto:best,t_Linkedin_official,w_1584/v1561576558/mountains-1412683_1280.png');
+
+    // pink bg
+    // background-image: url('https://img.freepik.com/free-photo/neutral-abstract-texture-simple-background_53876-102511.jpg?w=1380&t=st=1666341468~exp=1666342068~hmac=8ebe0183afb6c38a8c72256b2a19b7cd0db9ad527fc8ab4c7c6011c733ddd77d');
+
+    // dandelions
+    // background-image: url('https://img.freepik.com/free-photo/natural-dried-flower-floral-background_53876-143100.jpg?w=1480&t=st=1666341497~exp=1666342097~hmac=5cb946763ce6e48bb40824d176d9d3de38452505436805ee51a7008afc5b480e');
+
+    // mountain 2
+    // background-image: url('https://libg.s3.us-east-2.amazonaws.com/download/Peaceful-Snowy-Mountains-At-Night.jpg');
+
+
+    background-size: cover;
+    margin-top: 10px;
+
+    .header-titles {
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        padding-top: 25px;
+        justify-content: space-around;
+        font-family: 'Lora', serif;
+
+        .header-content {
+            display: flex;
+            height: 40%;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+
+            .header-title {
+                color: whitesmoke;
+                margin-bottom: 15px;
+                font-size: 100px;
+            }
+
+            .header-subtitle {
+                color: rgb(50, 50, 50);
+                font-size: 20px;
+            }
+        }
+    }
+}

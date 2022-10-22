@@ -1,9 +1,13 @@
 import './App.css';
+import { Navbar } from './components/components-index';
+import { Home, Blog } from './pages/pages-index';
 
 const App = () => {
   return (
     <div className="App">
-      <h1>App</h1>
+      <Navbar />
+      {/* <Home /> */}
+      <Blog />
     </div>
   );
 };
