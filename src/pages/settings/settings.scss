@@ -1,0 +1,91 @@
+.settings {
+    display: flex;
+
+    .settings-content {
+        flex: 9;
+        padding: 20px;
+
+        .settings-title {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .settings-update-title {
+                font-size: 30px;
+                margin-bottom: 20px;
+                color: salmon
+            }
+
+            .settings-delete-title {
+                color: red;
+                font-size: 12px;
+                cursor: pointer;
+            }
+        }
+
+        .settings-form {
+            display: flex;
+            flex-direction: column;
+
+            .settings-dp {
+                display: flex;
+                align-items: center;
+                margin: 10px 0;
+
+                img {
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 20px;
+                    object-fit: cover;
+                }
+
+                .settings-dp-icon {
+                    width: 25px;
+                    height: 25px;
+                    border-radius: 50%;
+                    padding: 10px;
+                    background-color: salmon;
+                    color: rgb(25, 25, 25);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-left: 10px;
+                    cursor: pointer;
+                }
+            }
+
+            label {
+                font-size: 20px;
+                margin-top: 20px;
+                color: rgb(210, 210, 210);
+            }
+
+            input {
+                color: rgb(210, 210, 210);
+                background-color: transparent;
+                margin: 10px 0;
+                height: 30px;
+                border: none;
+                border-bottom: 1px solid rgb(51, 51, 51);
+
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            .settings-submit {
+                width: 150px;
+                font-size: 16px;
+                font-weight: 600;
+                align-self: center;
+                border: none;
+                border-radius: 10px;
+                color: rgb(25, 25, 25);
+                background-color: salmon;
+                padding: 10px;
+                margin-top: 20px;
+                cursor: pointer;
+            }
+        }
+    }
+}
