@@ -6,3 +6,8 @@
 body {
   background-color: rgb(25, 25, 25);
 }
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}

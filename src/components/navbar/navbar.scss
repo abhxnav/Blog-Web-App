@@ -35,6 +35,21 @@
             object-fit: contain;
         }
 
+        .nav-list-item {
+            margin: 0 10px;
+            font-size: 18px;
+            font-weight: 300;
+            cursor: pointer;
+        }
+
+        .nav-list {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            list-style: none;
+            font-family: 'Rubik', sans-serif;
+        }
+
     }
 
     .nav-center {
@@ -68,4 +83,19 @@
             }
         }
     }
+}
+
+.nav-list-item {
+    margin: 0 10px;
+    font-size: 22px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    font-family: 'Rubik', sans-serif;
 }
