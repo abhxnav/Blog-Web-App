@@ -50,10 +50,12 @@
             margin: 0 10px;
             font-size: 18px;
             line-height: 35px;
+            text-align: justify;
+            text-justify: auto;
         }
 
         .blog-content-description::first-letter {
-            margin-left: 20px;
+            margin-left: 40px;
             font-size: 30px;
             font-weight: 600;
         }

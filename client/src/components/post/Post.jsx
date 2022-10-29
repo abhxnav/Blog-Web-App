@@ -1,30 +1,24 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './post.scss';
 
-const Post = () => {
+const Post = ({ post }) => {
   return (
     <div className="post">
-      <img
-        className="post-img"
-        src="https://res.cloudinary.com/omaha-code/image/upload/ar_4:3,c_fill,dpr_1.0,e_art:quartz,g_auto,h_396,q_auto:best,t_Linkedin_official,w_1584/v1561576558/mountains-1412683_1280.png"
-        alt=""
-      />
-      <div className="post-info">
-        <div className="post-categories">
-          <span className="post-category">Finance</span>
-          <span className="post-category">Business</span>
+      <Link to={`/blog/${post._id}`} className="link">
+        {post.photo && <img className="post-img" src={post.photo} alt="" />}
+        <div className="post-info">
+          <div className="post-categories">
+            {post.categories.map((c) => {
+              return <span className="post-category">({c.name})</span>;
+            })}
+          </div>
+          <span className="post-title">{post.title}</span>
+          <hr />
+          <p className="post-description">{post.desc}</p>
+          <div className="post-date">{new Date(post.createdAt).toDateString()}</div>
         </div>
-        <span className="post-title">Lorem ipsum dolor sit amet.</span>
-        <hr />
-        <p className="post-description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam rem omnis saepe, dolore, enim voluptates esse
-          nesciunt quaerat placeat iure, perferendis quae minus suscipit fugit voluptate adipisci. Aut quas aliquid fuga
-          iusto illum, saepe culpa neque mollitia odit a, tempore in consectetur quia eaque magnam pariatur autem
-          corporis labore optio, repellat maxime atque molestiae laboriosam. Amet, reprehenderit, itaque ullam vitae
-          debitis aspernatur, adipisci saepe consectetur praesentium natus fuga sunt soluta.
-        </p>
-        <div className="post-date">1 hour ago</div>
-      </div>
+      </Link>
     </div>
   );
 };
