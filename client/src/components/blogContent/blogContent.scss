@@ -22,6 +22,7 @@
             .blog-content-edit {
                 float: right;
                 font-size: 20px;
+                padding: 10px 0;
 
                 :first-child {
                     color: teal;
@@ -42,13 +43,13 @@
             margin: 0 10px 40px 10px;
             display: flex;
             justify-content: space-between;
-            font-size: 16px;
-            color: salmon;
+            font-size: 18px;
+            color: pink;
         }
 
         .blog-content-description {
             margin: 0 10px;
-            font-size: 18px;
+            font-size: 20px;
             line-height: 35px;
             text-align: justify;
             text-justify: auto;
@@ -56,7 +57,7 @@
 
         .blog-content-description::first-letter {
             margin-left: 40px;
-            font-size: 30px;
+            font-size: 40px;
             font-weight: 600;
         }
     }

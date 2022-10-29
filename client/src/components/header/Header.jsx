@@ -17,8 +17,8 @@ const Header = () => {
     <div className="header">
       <div className="header-titles">
         <div className="header-content">
-          <span className="header-subtitle">React & Node</span>
-          <span className="header-title">Blog</span>
+          <span className="header-title">WriteUp</span>
+          <span className="header-subtitle">Your daily digest</span>
         </div>
       </div>
     </div>
