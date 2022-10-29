@@ -1,6 +1,7 @@
 import React from 'react';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router';
+import { Link } from 'react-router-dom';
 import axios from 'axios';
 import './blogContent.scss';
 import { useState } from 'react';
@@ -31,7 +32,10 @@ const BlogContent = () => {
         </h1>
         <div className="blog-content-info">
           <span className="blog-content-author">
-            Author : <b>{post.username}</b>
+            Author :
+            <Link to={`/?user=${post.username}`} className="link" style={{ marginLeft: '5px' }}>
+              <b>{post.username}</b>
+            </Link>
           </span>
           <span className="blog-content-date">{new Date(post.createdAt).toDateString()}</span>
         </div>
