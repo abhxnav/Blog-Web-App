@@ -12,7 +12,9 @@ const Login = () => {
         <label>Password</label>
         <input className="login-input" type="password" placeholder="Password" />
         <button className="login-button">
-          <Link to="/login">Login</Link>
+          <Link to="/login" className="link">
+            Login
+          </Link>
         </button>
         <button className="login-register-button">
           <Link to="/register" className="link">
