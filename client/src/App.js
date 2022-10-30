@@ -1,11 +1,12 @@
-import './App.css';
+import { useContext } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Navbar } from './components/components-index';
 import { Home, Blog, Write, Settings, Login, Register } from './pages/pages-index';
-
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Context } from './context/Context';
+import './App.css';
 
 const App = () => {
-  const user = false;
+  const { user } = useContext(Context);
   return (
     <Router>
       <Navbar />

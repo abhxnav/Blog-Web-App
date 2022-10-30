@@ -1,9 +1,11 @@
-import React from 'react';
-import './navbar.scss';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { Context } from '../../context/Context';
+import './navbar.scss';
 
 const Navbar = () => {
-  const user = false;
+  const { user } = useContext(Context);
+
   return (
     <div id="navbar">
       <div className="nav-left">
