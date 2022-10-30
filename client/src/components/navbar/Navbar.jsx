@@ -4,7 +4,11 @@ import { Context } from '../../context/Context';
 import './navbar.scss';
 
 const Navbar = () => {
-  const { user } = useContext(Context);
+  const { user, dispatch } = useContext(Context);
+  const handleLogout = async (e) => {
+    dispatch({ type: 'LOGOUT' });
+    window.location.replace('/login');
+  };
 
   return (
     <div id="navbar">
@@ -36,7 +40,7 @@ const Navbar = () => {
             </Link>
           </li>
           {user && (
-            <li className="nav-list-item">
+            <li className="nav-list-item" onClick={handleLogout}>
               <Link to="/logout" className="link">
                 LOGOUT
               </Link>
@@ -48,11 +52,7 @@ const Navbar = () => {
       </div>
       <div className="nav-right">
         {user ? (
-          <img
-            className="nav-avatar"
-            src="https://www.pngall.com/wp-content/uploads/12/Avatar-Profile-PNG-Photos.png"
-            alt="profile"
-          />
+          <img className="nav-avatar" src={user.profilePicture} alt={user.username} />
         ) : (
           <ul className="nav-list">
             <li className="nav-list-item">
