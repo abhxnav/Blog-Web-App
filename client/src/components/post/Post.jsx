@@ -3,10 +3,11 @@ import { Link } from 'react-router-dom';
 import './post.scss';
 
 const Post = ({ post }) => {
+  const PF = 'http://localhost:5000/images/';
   return (
     <div className="post">
       <Link to={`/blog/${post._id}`} className="link">
-        {post.photo && <img className="post-img" src={post.photo} alt="" />}
+        {post.photo && <img className="post-img" src={PF + post.photo} alt="" />}
         <div className="post-info">
           <div className="post-categories">
             {post.categories.map((c) => {

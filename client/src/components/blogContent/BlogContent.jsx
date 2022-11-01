@@ -10,6 +10,7 @@ const BlogContent = () => {
   const location = useLocation();
   const path = location.pathname.split('/')[2];
   const [post, setPost] = useState({});
+  const PF = 'http://localhost:5000/images/';
 
   useEffect(() => {
     const fetchPost = async () => {
@@ -22,7 +23,7 @@ const BlogContent = () => {
   return (
     <div className="blog-content">
       <div className="blog-content-wrapper">
-        {post.photo && <img src={post.photo} alt="blogContent" className="blog-content-img" />}
+        {post.photo && <img src={PF + post.photo} alt="blogContent" className="blog-content-img" />}
         <h1 className="blog-content-title">
           {post.title}
           <div className="blog-content-edit">
