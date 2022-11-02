@@ -5,6 +5,8 @@ import './navbar.scss';
 
 const Navbar = () => {
   const { user, dispatch } = useContext(Context);
+  const PF = 'http://localhost:5000/images/';
+
   const handleLogout = async (e) => {
     dispatch({ type: 'LOGOUT' });
     window.location.replace('/login');
@@ -52,7 +54,13 @@ const Navbar = () => {
       </div>
       <div className="nav-right">
         {user ? (
-          <img className="nav-avatar" src={user.profilePicture} alt={user.username} />
+          <Link to="/settings">
+            <img
+              className="nav-avatar"
+              src={PF + user.profilePicture}
+              alt={user.username}
+            />
+          </Link>
         ) : (
           <ul className="nav-list">
             <li className="nav-list-item">
