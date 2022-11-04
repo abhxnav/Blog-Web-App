@@ -57,7 +57,11 @@ const Navbar = () => {
           <Link to="/settings">
             <img
               className="nav-avatar"
-              src={PF + user.profilePicture}
+              src={
+                user.profilePicture
+                  ? PF + user.profilePicture
+                  : 'https://i.pinimg.com/236x/6a/87/00/6a87006a2e50cdacfd77020b8ad30868.jpg'
+              }
               alt={user.username}
             />
           </Link>

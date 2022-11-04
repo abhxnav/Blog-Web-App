@@ -54,7 +54,13 @@ const Settings = () => {
           <label>Profile Picture</label>
           <div className="settings-dp">
             <img
-              src={file ? URL.createObjectURL(file) : PF + user.profilePicture}
+              src={
+                file
+                  ? URL.createObjectURL(file)
+                  : user.profilePicture
+                  ? PF + user.profilePicture
+                  : 'https://i.pinimg.com/236x/6a/87/00/6a87006a2e50cdacfd77020b8ad30868.jpg'
+              }
               alt="profile"
             />
             <label htmlFor="file-input">
@@ -90,7 +96,7 @@ const Settings = () => {
           </button>
         </form>
       </div>
-      <Sidebar />
+      {/* <Sidebar /> */}
     </div>
   );
 };

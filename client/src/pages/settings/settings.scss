@@ -1,5 +1,6 @@
 .settings {
     display: flex;
+    margin: 200px;
 
     .settings-content {
         flex: 9;
@@ -13,12 +14,15 @@
             .settings-update-title {
                 font-size: 30px;
                 margin-bottom: 20px;
-                color: salmon
+                color: plum;
             }
 
             .settings-delete-title {
-                color: red;
+                background-color: tomato;
+                color: rgb(15, 15, 15);
                 font-size: 12px;
+                padding: 7px;
+                border-radius: 7px;
                 cursor: pointer;
             }
         }
@@ -37,6 +41,7 @@
                     height: 70px;
                     border-radius: 20px;
                     object-fit: cover;
+                    border: 2px solid gray;
                 }
 
                 .settings-dp-icon {
@@ -44,8 +49,8 @@
                     height: 25px;
                     border-radius: 50%;
                     padding: 10px;
-                    background-color: salmon;
-                    color: rgb(25, 25, 25);
+                    background-color: plum;
+                    color: rgb(15, 15, 15);
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -80,8 +85,8 @@
                 align-self: center;
                 border: none;
                 border-radius: 10px;
-                color: rgb(25, 25, 25);
-                background-color: salmon;
+                color: rgb(15, 15, 15);
+                background-color: plum;
                 padding: 10px;
                 margin-top: 20px;
                 cursor: pointer;
